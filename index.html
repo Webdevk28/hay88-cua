@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/google-play.png">
+    <title>BauCua</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- tailwin -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- google icon -->
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+</head>
+<body>
+
+    <!-- header -->
+    <section>
+        <div class="fixed top-0 w-full z-50 bg-white">
+            <div class="flex justify-between px-5 mt-1.5 md:mt-0 md:px-8">
+                <div class="flex justify-center items-center gap-8 text-gray-700 opacity-90 font-[500]">
+                    <div class="flex justify-center items-center gap-2 text-2xl cursor-pointer" onClick="DownSoft()">
+                        <img src="./images/logoo.webp" class="w-[33px]">
+                        <span class="fontt text-[21px] w-40 sm:w-auto"><span class="fontf text-[25px]">G</span>oogle Play</span>
+                    </div>
+                    <div class="hidden lg:block xl:block mt-2">
+                        <div class="flex gap-8 cursor-pointer text-[14px]">
+                            <span class="py-4">Trò chơi</span>
+                            <span class="py-4 border-b-2 border-green-700 text-[#01875f]">ứng dụng</span>
+                            <span class="py-4">Phim</span>
+                            <span class="py-4">Sách</span>
+                            <span class="py-4">Những đứa trẻ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-2 px-8 text-gray-600">
+                    <span class="material-symbols-outlined cursor-pointer hover:bg-gray-200 rounded-full duration-300 p-2.5">search</span>
+                    <span class="material-symbols-outlined cursor-pointer hover:bg-gray-200 rounded-full duration-300 p-2.5">help</span>
+                </div>
+            </div>
+        </div>
+        <div class="fixed bottom-0 z-50 bg-white w-full lg:hidden xl:hidden flex justify-center items-center">
+            <div class=" bg-white border-t grid grid-cols-5 text-gray-600 text-sm w-full sm:w-9/12 md:w-8/12">
+                <div onClick="DownSoft()" class="flex flex-col justify-center items-center">
+                    <img src="./images/trochoi.svg">
+                    <span>Trò Chơi</span>
+                </div>
+                <div onClick="DownSoft()" class="flex py-1 flex-col justify-center items-center text-green-700 opacity-90">
+                    <i class="bi bi-grid-fill text-xl"></i>
+                    <span>ứng dụng</span>
+                </div>
+                <div onClick="DownSoft()" class="flex flex-col justify-center items-center">
+                    <img src="./images/phim.svg">
+                    <span>Phim</span>
+                </div>
+                <div onClick="DownSoft()" class="flex flex-col justify-center items-center">
+                    <img src="./images/sach.svg">
+                    <span>Sách</span>
+                </div>
+                <div onClick="DownSoft()" class="flex flex-col justify-center items-center">
+                    <img src="./images/nhungduatre.svg">
+                    <span class="hidden sm:block">Những đứa trẻ</span>
+                    <span class="sm:hidden">Những đứa</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- .bg -->
+    <section>
+        <div class="bg relative flex justify-center items-center mt-16 bg-[#202124] pb-10">
+            <div class="h-[600px]">
+                <img src="./images/background.jpg" class="w-full h-[600px]">
+            </div>
+            <div class="bgg"></div>
+            <div class="max-w-7xl text-gray-100 absolute bottom-0">
+                <div class="grid grid-cols-2 w-full py-10">
+                    <!-- left -->
+                    <div class="left">
+                        <!-- ... -->
+                        <div class="flex gap-4">
+                            <div class="lg:hidden">
+                                <img src="./images/icon.png" class="w-[72px]">
+                            </div>
+    
+                            <div class="font">
+                                <span class="fontt text-2xl sm:text-4xl lg:text-[56px] font-[500] text-gray-100">Bau Cua</span>
+                                <div class="lg:py-6">
+                                    <span class="block text-[#01875f] text-base cursor-pointer"onclick="DownSoft()">Bau Cua</span>
+                                    <span class="block text-xs">Chứa quảng cáo - Mua hàng trong ứng dụng</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- ... -->
+                        <div class="mt-6 lg:mt-2 flex scrolling-touch overflow-auto">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col justify-center items-center w-20">
+                                    <div class="flex text-[#202124]">
+                                        <span class="fontroboto">4,5</span>
+                                        <img src="./images/star.svg" class="w-3">
+                                    </div>
+                                    <span class="text-xs fontroboto">404K đánh giá</span>
+                                </div>
+
+                                <div class="flex justify-center items-center">
+                                    <span class="border h-6">
+                                    </span>
+                                </div>
+
+                                <div class="flex flex-col items-center justify-center w-20">
+                                    <span class="text-[#202124]">100 dặm+</span>
+                                    <span class="text-xs">Tải xuống</span>
+                                </div>
+
+                                <div class="flex justify-center items-center">
+                                    <span class="border h-6">
+                                    </span>
+                                </div>
+
+                                <div class="flex flex-col items-center justify-center w-32">
+                                    <img src="./images/L.webp" class="w-4">
+                                    <div class="flex justify-center items-center gap-2">
+                                        <span class="text-xs mt-1">Phân loại miễn phí</span>
+                                        <span class="material-symbols-outlined text-sm">info</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- caidat -->
+                        <div class="mt-10">
+                            <div class="flex flex-wrap justify-start items-center gap-2 sm:gap-4">
+                                <div class="main w-full h-[36px] sm:w-[160px] sm:h-[36px] lg:w-[200px] lg:h-[45px] flex items-center justify-center py-3 text-[15px] lg:text-[17px] fill-[#202124] text-gray-50 rounded-lg bg-[#01875f] hover:bg-green-900 duration-300 cursor-pointer" onClick="DownSoft()"><span class="font-[500]">Cài đặt</span></div>
+                                
+                                <div class=" h-auto text-[15px] sm:w-[387px] sm:h-[52] text-[#01875f] flex gap-3 justify-center items-center sm:justify-start md:justify-start lg:justify-start xl:justify-start mt-2 w-full">
+                                    <div class="flex gap-3 leading-4 justify-center items-center py-1 px-2 cursor-pointer hover:bg-blue-50 duration-300 rounded">
+                                        <i class="bi bi-share-fill text-lg"></i>
+                                        <span class="text-[#01875f]">Chia sẻ</span>
+                                    </div>
+                                    <div class="flex gap-3 leading-4 justify-start items-center py-1 px-2 cursor-pointer hover:bg-blue-50 duration-300 rounded">
+                                        <img src="./images/bookmark.png" class="w-[13px]">
+                                        <span class="sm:hidden lg:block xl:block text-[#01875f] mt-1">Thêm vào danh sách mong muốn</span>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="right flex justify-end items-end">
+                        <span class="text-gray-100 p-2.5 px-8 bg-gray-950 rounded-full">Đoạn giới thiệu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- main -->
+    <section class="main mt-24">
+        <div class="flex flex-col justify-center items-center mt-4 px-6 py-2">
+            <div class="max-w-7xl">
+                <div class="grid lg:grid-cols-12 xl:grid-cols-12 py-2">
+                    <!-- left -->
+                    <div class="text-sm text-gray-500 grid md:col-span-8 ">
+                        <!-- ... -->
+                        <div class="flex gap-4">
+                            <div class="lg:hidden">
+                                <img src="./images/icon.png" class="w-[72px]">
+                            </div>
+    
+                            <div class="font">
+                                <span class="fontt text-2xl sm:text-4xl lg:text-[56px] font-[500] text-[#202124]">Bau Cua</span>
+                                <div class="lg:py-6">
+                                    <span class="block text-[#01875f] text-base cursor-pointer"onclick="DownSoft()">Bau Cua</span>
+                                    <span class="block text-xs">Chứa quảng cáo - Mua hàng trong ứng dụng</span>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- ... -->
+                        <div class="mt-6 lg:mt-2 flex scrolling-touch overflow-auto">
+                            <div class="flex gap-4">
+                                <div class="flex flex-col justify-center items-center w-20">
+                                    <div class="flex text-[#202124]">
+                                        <span class="fontroboto">4,5</span>
+                                        <img src="./images/star.svg" class="w-3">
+                                    </div>
+                                    <span class="text-xs fontroboto">404K đánh giá</span>
+                                </div>
+
+                                <div class="flex justify-center items-center">
+                                    <span class="border h-6">
+                                    </span>
+                                </div>
+
+                                <div class="flex flex-col items-center justify-center w-20">
+                                    <span class="text-[#202124]">100 dặm+</span>
+                                    <span class="text-xs">Tải xuống</span>
+                                </div>
+
+                                <div class="flex justify-center items-center">
+                                    <span class="border h-6">
+                                    </span>
+                                </div>
+
+                                <div class="flex flex-col items-center justify-center w-32">
+                                    <img src="./images/L.webp" class="w-4">
+                                    <div class="flex justify-center items-center gap-2">
+                                        <span class="text-xs mt-1">Phân loại miễn phí</span>
+                                        <span class="material-symbols-outlined text-sm">info</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- ... -->
+                        <div class="mt-10">
+                            <div class="flex flex-wrap justify-start items-center gap-2 sm:gap-4">
+                                <div class="main w-full h-[36px] sm:w-[160px] sm:h-[36px] lg:w-[200px] lg:h-[45px] flex items-center justify-center py-3 text-[15px] lg:text-[17px] fill-[#202124] text-gray-50 rounded-lg bg-[#01875f] hover:bg-green-900 duration-300 cursor-pointer" onClick="DownSoft()"><span class="font-[500]">Cài đặt</span></div>
+                                
+                                <div class=" h-auto text-[15px] sm:w-[387px] sm:h-[52] text-[#01875f] flex gap-3 justify-center items-center sm:justify-start md:justify-start lg:justify-start xl:justify-start mt-2 w-full">
+                                    <div class="flex gap-3 leading-4 justify-center items-center py-1 px-2 cursor-pointer hover:bg-blue-50 duration-300 rounded">
+                                        <i class="bi bi-share-fill text-lg"></i>
+                                        <span class="text-[#01875f]">Chia sẻ</span>
+                                    </div>
+                                    <div class="flex gap-3 leading-4 justify-start items-center py-1 px-2 cursor-pointer hover:bg-blue-50 duration-300 rounded">
+                                        <img src="./images/bookmark.png" class="w-[13px]">
+                                        <span class="sm:hidden lg:block xl:block text-[#01875f] mt-1">Thêm vào danh sách mong muốn</span>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+    
+                        <!-- ... -->
+                        <div class="mt-10 text-gray-500">
+                            <div class="flex gap-3 justify-start items-center">
+                                <span class="material-symbols-outlined font-medium">devices</span>
+                                <span class="">Ứng dụng này có sẵn cho tất cả các thiết bị của bạn</span>
+                            </div>
+                        </div>
+
+                        <!-- slider img -->
+                        <div class="mt-20 ">
+                            <div class="flex gap-7 relative">
+                                <div class="flex justify-between scrolling-touch overflow-auto gap-4">
+                                    <div class="flex gap-4">
+                                        <img src="./images/poster1.png" class="rounded-lg w-auto bg-center">
+                                        <img src="./images/poster2.png" class="rounded-lg w-auto bg-center">
+                                        <img src="./images/poster3.png" class="rounded-lg w-auto bg-center">
+                                    </div>
+                                    
+                                    <div class="flex justify-end items-center">
+                                        <span class="text material-symbols-outlined absolute right-0 font-medium text-7xl bg-white shadow border px-3 py-2 w-14 h-14 hover:bg-gray-300 hover:shadow-lg duration-300 rounded-full cursor-pointer hidden lg:flex lg:justify-center lg:items-center ">chevron_right</span>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-100"></div>
+                            </div>
+                        </div>
+                        <!-- end slider img -->
+    
+                        <!-- ... -->
+                        <div class="mt-5">
+                            <div class="fontt flex justify-between sm:justify-start items-center gap-3 text-2xl text-gray-800 font-medium">
+                                <h2>Về trò chơi này</h2>
+                                <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 hover:shadow-lg duration-300 rounded-full cursor-pointer">arrow_forward</span>
+                            </div>
+    
+                            <span class="mt-3 block">Thưởng thức hiệu ứng âm thanh sôi động và đồ họa đẹp mắt tại Vietnam Slots và hòa mình vào thế giới giải trí của Việt Nam.</span>
+                            
+                            <h2 class="mt-4 block text-gray-900 font-medium">Đã cập nhật</h2>
+                            <span class="block">ngày 30 tháng 9 2023</span>
+                            
+                            <!-- ... -->
+                            <div class="flex flex-wrap gap-3 mt-6">
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Sòng bạc</div>
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Máy đánh bạc</div>
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Binh thưởng</div>
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Một người chơi</div>
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Cách điệu</div>
+                                <div onClick="DownSoft()" class="py-1.5 px-3 border rounded-full hover:text-gray-800 hover:bg-gray-100 duration-300 cursor-pointer">Nhoại tuyến</div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="flex justify-between sm:justify-start items-center gap-3 text-2xl text-gray-800 mt-4">
+                                <span>Bảo mật dữ liệu</span>
+                                <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 hover:shadow-lg duration-300 rounded-full cursor-pointer">arrow_forward</span>
+                            </div>
+                            
+                            <span class="mt-4 block">Bảo mật của bạn bắt đầu bằng việc hiểu cách các nhà phát triển thu thập và chia sẻ dữ liệu của bạn. Các biện pháp bảo
+                            mật và quyền riêng tư dữ liệu có thể khác nhau tùy theo mức độ sử dụng, khu vực và độ tuổi. Nhà phát triển đã cung cấp
+                            thông tin sau, thông tin này có thể được cập nhật theo thời gian.</span>
+    
+                            <!-- ... -->
+                            <div class="border rounded-lg p-4 mt-8">
+                                <div class="flex gap-4">
+                                    <div class=""><img src="./images/1.webp" class="w-5"></div>
+                                    <span>Ứng dụng này có thể chia sẻ những loại dữ liệu này với bên thứ ba <br>
+                                    Địa phương</span>
+                                </div>
+                                <div class="flex gap-4 mt-6">
+                                    <div class=""><img src="./images/2.webp" class="w-5"></div>
+                                    <span>Không có dữ liệu nào được thu thập <br>
+                                    <span onClick="DownSoft()" class="underline cursor-pointer">Tìm hiểu thêm</span> về cách nhà phát triển khai báo bộ sưu tập</span>
+                                </div>
+                                <div class="flex gap-4 mt-6">
+                                    <img src="./images/3.webp" class="w-5">
+                                    <span>Dữ liệu không được mã hóa</span>
+                                </div>
+                                <div class="flex gap-4 mt-6">
+                                    <img src="./images/4.webp" class="w-5">
+                                    <span>Bạn có thể yêu cầu xóa dữ liệu</span>
+                                </div>
+    
+                                <div onClick="DownSoft()" class="mt-4 block text-[#01875f] p-2 cursor-pointer">xem chi tiết</div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class=" flex flex-wrap justify-between items-center mt-8">
+                                <div class="flex w-full sm:w-auto justify-between sm:justify-start items-center gap-3 text-2xl text-gray-800">
+                                    <span>Xếp hạng và đánh giá</span>
+                                    <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 hover:shadow-lg duration-300 rounded-full cursor-pointer">arrow_forward</span>
+                                </div>
+                                <div class=" flex items-center gap-1 mt-2 sm:mt-0">
+                                    <a href="">Điểm số và đánh giá được kiểm tra </a>
+                                    <span class="material-symbols-outlined text-sm">info</span>
+                                </div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="mt-8 flex flex-wrap gap-3">
+                                <div class="">
+                                    <a href="" class="rounded-full text-green-700 border py-1 px-5 flex justify-center items-center gap-1.5 hover:bg-gray-100 duration-300">
+                                        <span class="material-symbols-outlined text-lg">phone_android</span>
+                                        <span>Điện thoại</span>
+                                    </a>
+                                </div>
+                                <div class="">
+                                    <a href="" class="rounded-full border py-1 px-5 flex justify-center items-center gap-1.5 hover:bg-gray-100 duration-300">
+                                        <span class="material-symbols-outlined text-lg">ad_units</span>
+                                        <span>Viến thuốc</span>
+                                    </a>
+                                </div>
+    
+                                <div class="">
+                                    <a href="" class="rounded-full border py-1 px-5 flex justify-center items-center gap-1.5 hover:bg-gray-100 duration-300">
+                                        <span class="material-symbols-outlined text-lg">devices</span>
+                                        <span>Chromebook</span>
+                                    </a>
+                                </div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="flex justify-between mt-8">
+                                <div class="flex flex-col shrink-0 basis-36 grow-1">
+                                    <span class="text-6xl text-gray-800 font-normal fontroboto">4,5</span>
+                                    <div class="text-[#01875f]">
+                                        <i class="bi bi-star-fill text-[13px]"></i>
+                                        <i class="bi bi-star-fill text-[13px]"></i>
+                                        <i class="bi bi-star-fill text-[13px]"></i>
+                                        <i class="bi bi-star-fill text-[13px]"></i>
+                                    </div>
+                                    <span class="mt-2 block text-xs">367 nghìn lượt đánh giá</span>
+                                </div>
+                                
+                                <div class="w-full opacity-90">
+                                    <div class="flex gap-2 justify-center items-center">
+                                        <div class="text-xs">5</div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-green-700 h-2.5 rounded-full" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 justify-center items-center">
+                                        <div class="text-xs">4</div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-green-700 h-2.5 rounded-full" style="width: 30%"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex gap-2 justify-center items-center">
+                                        <div class="text-xs">3</div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-green-700 h-2.5 rounded-full" style="width: 13%"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex gap-2 justify-center items-center">
+                                        <div class="text-xs">2</div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-green-700 h-2.5 rounded-full" style="width: 10%"></div>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="flex gap-2 justify-center items-center">
+                                        <div class="text-xs">1</div>
+                                        <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                                            <div class="bg-green-700 h-2.5 rounded-full" style="width: 1%"></div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="mt-10">
+                                <div class="flex justify-between">
+                                    <div class="flex gap-4 justify-center items-center">
+                                        <img src="./images/i.webp" class="rounded-full">
+                                        <span>isa bán hàng</span>
+                                    </div>
+                                    <div class="">
+                                        <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 duration-300 rounded-full cursor-pointer">more_vert</span>
+                                    </div>
+                                </div>
+    
+                                <!-- ... -->
+                                <div class="mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="text-xs text-[#01875f] opacity-90">
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                        </div>
+                                        <span>Ngày 1 tháng 6 năm 2023</span>
+                                    </div>
+                                    <span class="mt-3 block">Niềm vui sẽ được trả bằng một khoản giảm giá nhỏ qua pix, điều này đã xảy ra với tôi trong lần rút tiền đầu tiên.</span>
+    
+                                    <span class="mt-3 block">Đánh giá này được 59 người đánh dấu là hữu ích</span>
+    
+                                    <div class="flex gap-3 items-center mt-4">
+                                        <span>Tìm thấy điều này hữu ích không bạn?</span>
+                                        <div class="flex flex-wrap gap-3 text-md">
+                                            <a href="" class="px-4 border rounded-full">Đúng</a>
+                                            <a href="" class="px-4 border rounded-full">KHÔNG</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="mt-12">
+                                <div class="flex justify-between">
+                                    <div class="flex gap-4 justify-center items-center">
+                                        <img src="./images/c.webp" class="rounded-full">
+                                        <span>Caio Silva</span>
+                                    </div>
+                                    <div class="">
+                                        <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 duration-300 rounded-full cursor-pointer">more_vert</span>
+                                    </div>
+                                </div>
+                                <!-- ... -->
+                                <div class="mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="text-xs text-[#01875f] opacity-90">
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                        </div>
+                                        <span>Ngày 5 tháng 6 năm 2023</span>
+                                    </div>
+                                    <span class="mt-3 block">Rất tốt! Tôi đã giành được 1000000 VND và khi tôi nạp tiền vào tài khoản của mình thì chưa đầy 1 phút, tôi khuyên bạn
+                                    nên làm như vậy!!!!!!</span>
+    
+                                    <span class="mt-3 block">Đánh giá này được 29 người đánh dấu là hữu ích</span>
+    
+                                    <div class="flex gap-3 items-center mt-4">
+                                        <span>Tìm thấy điều này hữu ích không bạn?</span>
+                                        <div class="flex flex-wrap gap-3 text-md">
+                                            <a href="" class="px-4 border rounded-full">Đúng</a>
+                                            <a href="" class="px-4 border rounded-full">KHÔNG</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <!-- ... -->
+                            <div class="mt-12">
+                                <div class="flex justify-between">
+                                    <div class="flex gap-4 justify-center items-center">
+                                        <img src="./images/p.webp" class="rounded-full">
+                                        <span>Caio Silva</span>
+                                    </div>
+                                    <div class="">
+                                        <span class="material-symbols-outlined text-gray-600 text-2xl bg-white px-3 py-2 hover:bg-gray-100 duration-300 rounded-full cursor-pointer">more_vert</span>
+                                    </div>
+                                </div>
+                                <!--  -->
+                                <div class="mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="text-xs text-[#01875f] opacity-90">
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                            <i class="bi bi-star-fill text-[10px] px-[1px]"></i>
+                                        </div>
+                                        <span>Ngày 28 tháng 6 năm 2023</span>
+                                    </div>
+                                    <span class="mt-3 block">Thực sự trả tiền Tôi đã thực hiện nhiều lần rút tiền và tiền sẽ vào tài khoản sau vài giây Siêu trung thực</span>
+    
+                                    <span class="mt-3 block">Đánh giá này được 29 người đánh dấu là hữu ích</span>
+    
+                                    <div class="flex gap-3 items-center mt-4">
+                                        <span>Tìm thấy điều này hữu ích không bạn?</span>
+                                        <div class="flex flex-wrap gap-3 text-md">
+                                            <a href="" class="px-4 border rounded-full">Đúng</a>
+                                            <a href="" class="px-4 border rounded-full">KHÔNG</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="mt-6">
+                                <a href=""​ class="text-green-700 opacity-90">Xem tất cả đánh giá</a>
+                            </div>
+    
+                            <div class="mt-8">
+                                <span=""​ class="text-gray-800 text-2xl">Có gì mới</span>
+                            </div>
+    
+                            <div class="mt-8">
+                                <span class="block">Xin chào những người yêu thích Tycoon, phiên bản mới đã đến! Dưới đây là một số bất ngờ dành cho bạn!</span>
+                                <span class="block">- Trò chơi mới: HAY88 sử thi</span>
+                                <span class="block">- Hoạt động mới</span>
+                                <span class="block">- Đã sửa lỗi</span>
+                                <span class="block">Bây giờ là lúc quay và giành chiến thắng!</span>
+                            </div>
+    
+                            <div onClick="DownSoft()" class="flex gap-4 mt-8 cursor-pointer">
+                                <span class="material-symbols-outlined">emoji_flags</span>
+                                <span class="text-gray-800">Gắn cờ là không phu hợp</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <!-- right -->
+                    <div class="hidden sm:block grid md:col-span-4">
+                        <div class="flex justify-end">
+                            <img src="./images/icon.png" class="w-[240px]">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- line -->
+                <div class="mt-10">
+                    <hr>
+                </div>
+
+                <!-- footer -->
+                <div class="text-sm text-gray-500 mt-10">
+
+                    <div class="flex flex-wrap gap-10">
+                        <div class="flex flex-col gap-3 w-72">
+                            <span class="text-gray-600 text-[15px]">Google Play</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Chơi thẻ</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Điểm chơi</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Thẻ quà tặng</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Giải thoát</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Chính sách hoàn tiền</span>
+                        </div>
+
+                        <div class="flex flex-col gap-3 w-72">
+                            <span class="text-gray-600 text-[15px]">Trẻ em và gia đình</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Hướng dẫn gia đình</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Chia sẻ gia đình</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-8 justify-between items-center py-6 mt-6 text-xs">
+                        <div class="flex flex-wrap gap-8">
+                            <span onClick="DownSoft()" class="cursor-pointer">Điều khoản dịch vụ</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Sự riêng tư</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Giới thiệu về Google Play</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Nhà phát triển</span>
+                            <span onClick="DownSoft()" class="cursor-pointer">Cửa hàng Google</span>
+                            <span>Tất cả giá đã bao gồm thuế.</span>
+                        </div>
+                        <div class="flex gap-2 items-center">
+                            <img src="./images/English.png" class="w-6">
+                            <span>Hoa Kỳ (Tiếng Việt)</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+	
+<script>
+
+function GetRequest() {
+    var url = location.search;
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        var strs = str.split("&");
+        for (var i = 0; i < strs.length; i++) {
+            theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+        }
+    }
+    return theRequest;
+}
+
+var urlParams = GetRequest();
+
+if (urlParams && urlParams.fb_dynamic_pixel) {
+var fb_dynamic_pixel = urlParams.fb_dynamic_pixel;
+}
+else
+{
+var fb_dynamic_pixel = "0";
+}
+
+if (urlParams && urlParams.c) {
+var c = urlParams.c;
+}
+else
+{
+var c = "Null";
+}
+
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', fb_dynamic_pixel);
+
+var url = "https://app.appsflyer.com/com.hay88.v3?pid=baohay_int&af_siteid="+fb_dynamic_pixel+"&c="+c+"&af_r=https%3A%2F%2Fdownload-hay88.com%2Fapk2%2FHay88-V3.apk&af_click_lookback=7d&clickid={clickid}&advertising_id={gaid}&is_incentivized={false}";
+
+function DownSoft() {
+fbq('track', 'Download');
+location.href = url;
+}
+
+</script>
+	
+</body>
+</html>
